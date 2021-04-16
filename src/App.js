@@ -131,11 +131,12 @@ function App() {
 
 
         <main className={classes.content}>
+          <Container maxWidth="lg" className={classes.container}>
             <Grid container spacing={3}>
 
               {/* Recent Orders */}
               <Grid item xs={12}>
-                <Paper className={classes.paper}>
+                <Paper className={classes.paper} >
                   {/*<Orders />*/}
                   {/*<SearchArea/>*/}
                 </Paper>
@@ -143,12 +144,12 @@ function App() {
 
               {/* Chart */}
               <Grid item xs={12}>
-                <Paper className={classes.paper}>
-                  <ProductsTable/>
-                </Paper>
+                <ProductsTable/>
+
               </Grid>
 
             </Grid>
+          </Container>
         </main>
       </div>
 
